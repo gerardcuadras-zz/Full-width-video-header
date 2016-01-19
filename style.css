@@ -1,0 +1,199 @@
+/*
+Author: Gerard Cuadras
+Author URI: http://gerardcuadras.com
+Version: 0.1
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 100%;
+}
+
+p {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  margin-bottom: .35em;
+}
+
+h1 {
+  font-size: 3em;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 2em;
+  margin-top: 1em;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 10em 2em 10em 2em;
+}
+
+#videoheader{
+	height: 100vh;
+	position: relative;
+    top: 0;
+    width: 100%;
+}
+
+
+#header{	
+	height: 60px;
+	position: absolute;
+	z-index: 2;
+	top: 0px;
+	width: 100%;
+	background-color: transparent;	
+	padding-top: 10px;
+	-webkit-transition: background .1s;
+    -moz-transition: background .1s;
+    -webkit-transition: background .1s; 
+	transition: background .1s;
+}
+#header .logo{
+	float:	left;
+	padding-left: 10px;
+	font-size: 36px;
+}
+
+#header .logofont{
+	display: none;
+}
+
+#header .logofont, #headertitle, .sectiontitle{
+	font-family: Roboto;
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.64);
+	font-weight: 400;
+	font-size: 40px;
+}
+
+#header .logofont .thin, #headertitle .thin, .sectiontitle .thin{
+	font-family: Roboto;
+	font-style: inherit;
+	font-weight: 200;
+}
+
+#header .social{
+	float: right;
+	margin-right: 40px;	
+}
+
+#header .social .socialico{
+	margin: 5px;
+	color: rgba(255, 255, 255, 0.64);
+	font-size: 30px;
+}
+
+#headertitle{
+    z-index: 5;
+    position: absolute;
+    text-align: center;
+	color: rgba(255, 255, 255, 0.64);
+    text-decoration: none;
+    font-size: 8vw;
+    z-index: 5;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: opacity .2s;
+    -moz-transition: opacity .2s;
+    -webkit-transition: opacity .2s; 
+	transition: opacity .2s;
+}
+
+#waypoint1{
+	position: absolute;
+	top: 50px;
+	width: 100%;
+	z-index: 2;
+}
+
+.fullwidth{
+	
+	width: 100%;
+	height: auto;
+	padding: 50px 30px;
+	
+}
+
+.clearfloat{
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+/* SECTIONS */
+
+.sectiontitle{
+	text-align: center;
+}
+
+.sectioncontent{
+    padding: 20px 40px;
+}
+
+.leftbox{
+	width: 40%;
+	float: left;
+}
+
+.rightbox{
+	width: 59%;
+	float: right;
+}
+
+.aboutme{
+	background-color: #F57F17;
+	color: #fafafa;
+	overflow: auto;
+	box-shadow: inset 0 20px 20px -20px #000000;;
+}
+
+.aboutme .rightbox p{
+	padding-left: 20px;
+}
+
+.aboutme .sectiontitle{
+	color: #fafafa;
+}
+
+.skills{
+	background-color: #BF360C;
+	color: #fafafa;
+	box-shadow: inset 0 20px 20px -20px #000000;;
+}
+
+.skills .sectiontitle{
+	color: #fafafa;
+}
+
+.contact{
+	background-color: #0cbf92;
+	color: #fafafa;
+	box-shadow: inset 0 20px 20px -20px #000000;;
+}
+
+.contact .sectiontitle{
+	color: #fafafa;
+}

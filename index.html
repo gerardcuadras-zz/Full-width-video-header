@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	    <script src="js/lib/jquery.vide.js"></script>
+	    <script src="js/lib/jquery.waypoints.min.js"></script>
+
+	    <link rel="stylesheet" href="style.css">
+
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900' rel='stylesheet' type='text/css'>
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	</head>
+	<body>
+
+	<div class="wrapper">
+
+		<!-- header -->
+		<div id="header">
+			<div class="logo">
+				<a href="" class="logofont">GERARD<i class="thin">CUADRAS</i></a>
+			</div>
+			
+			<div class="social">
+				<a href="http://twitter.com/gerardcuadras"><i class="socialico fa fa-twitter"></i></a>
+				<a href="http://facebook.com/gerardcuadras"><i class="socialico fa fa-facebook"></i></a>
+				<a href="http://instagram.com/gerardcuadras"><i class="socialico fa fa-instagram"></i></a>
+				<a href="http://google.com/+gerardcuadras"><i class="socialico fa fa-google"></i></a>
+			</div>				
+		</div>
+		<div id="waypoint1"></div>
+		<div id="videoheader">
+			<div id="headertitle">GERARD<i class="thin">CUADRAS</i></div>
+		</div>				
+
+	<main role="main">
+		
+		<!-- header section -->
+		<section class="fullwidth aboutme">
+			
+			<h2 class="sectiontitle">ABOUT<i class="thin">ME</i></h2>
+			
+		</section>
+		
+		<section class="fullwidth skills">
+			
+			<h2 class="sectiontitle">MY<i class="thin">SKILLS</i></h2>
+			
+		</section>					
+		
+		<section class="fullwidth contact">
+			
+			<h2 class="sectiontitle">CONTACT<i class="thin">ME</i></h2>
+			
+		</section>		
+				
+	</main>
+
+	<script>
+		jQuery(document).ready(function($) {
+
+			jQuery('#videoheader').vide({
+				mp4: "video/For_Wes",
+				webm: "video/For_Wes",
+				poster: "video/For_Wes"
+			}, {
+					muted: true,
+					loop: true,
+					autoplay: true,
+					position: "50% 50%",
+					posterType: "none",
+					resizing: true,
+					bgColor: 'transparent'
+
+			});
+
+
+			var waypoints = $('#waypoint1').waypoint({
+			  handler: function(direction) {
+			    if(jQuery('#header').hasClass('fixed')){
+			    	jQuery('#header').removeClass('fixed').css('position','absolute').css('background-color','transparent');
+			    	jQuery('#headertitle').css('opacity','100');
+			    	jQuery('.logofont').css('display','none');
+		    	}else{
+			    	if(!jQuery('#header').hasClass('fixed')){
+			    		jQuery('#header').addClass('fixed').css('position','fixed').css('background-color','rgba(25, 25, 25, 0.59)');
+			    		jQuery('#headertitle').css('opacity','0');	
+				    	jQuery('.logofont').css('display','block');			    
+		    		}
+		    	}
+			  }
+			});
+		});
+	</script>
+
+	</body>
+
+</html>
